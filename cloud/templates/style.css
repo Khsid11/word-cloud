@@ -1,0 +1,116 @@
+/* Navbar */
+.navbar {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result Container */
+.result-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.word-cloud, .co-occurrence-table, .named-entities {
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.word-cloud {
+    flex: 1;
+}
+
+.co-occurrence-table, .named-entities {
+    flex: 2;
+}
+
+/* Typography */
+h2, h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* Named Entities */
+.named-entities p {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+/* Word Cloud Image */
+.word-cloud img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}

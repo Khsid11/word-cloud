@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Text File</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        nav {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 160px auto 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 40px;
+            color: #333;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .visualization {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .visualization img {
+            display: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            margin: 20px;
+            width: 80%; /* Make images larger */
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Word Co-occurrence</h1>
+    </nav>
+    <div class="container">
+        <h2>Upload Text File</h2>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".txt" class="button">
+            <input type="submit" value="Upload" class="button">
+        </form>
+    </div>
+    <footer>
+        Guided by Durga Pavni
+    </footer>
+</body>
+
+</html>
